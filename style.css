@@ -1,0 +1,13 @@
+.video1{
+    width:100%;
+    height: auto;
+}
+
+/*Styling af hele class med video, tekst og knap*/
+.video1-container {
+    position:relative;
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
