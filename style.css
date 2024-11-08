@@ -1,6 +1,12 @@
+body{
+    max-width: 1440px; /* Sætter den maksimale bredde til 1440px */
+    max-height: 1024px;
+}
 .video1{
     width:100%;
     height: auto;
+    max-width: 1440px; /* Sætter den maksimale bredde til 1440px */
+    max-height: fit-content;
 }
 
 /*Styling af hele class med video, tekst og knap*/
@@ -10,4 +16,16 @@
     width: 100%;
     height: auto;
     margin: 0 auto;
+}
+
+#nextPageIcon {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;  /* Juster størrelsen efter behov */
+    height: 50px; /* Juster størrelsen efter behov */
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 38px;
+    padding: 10px;
 }
