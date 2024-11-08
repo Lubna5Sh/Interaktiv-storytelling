@@ -1,0 +1,48 @@
+.quiz-container { 
+    text-align: center; 
+    margin-top: 50px; 
+    background-color: #A7DDFC; /* Tilføj baggrundsfarven */
+    grid-template-rows: auto 2fr; /* Definer rækkerne */
+    gap: 20px; /* Tilføj afstand mellem rækkerne */
+    padding: 20px; /* Tilføj padding for at skabe lidt luft omkring indholdet */
+} 
+.quiz-content { 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+}
+
+
+.quiz-image { 
+    max-width: 25%; 
+    height: auto; 
+    margin-right: 35%;
+} 
+
+
+.quiz-buttons { 
+    margin-top: 50px;
+    display: contents;
+
+} 
+
+
+.quiz-buttons button { 
+    font-size: 20px; margin: 10px; 
+    margin: 10px;
+    padding: 10px 20px; 
+    cursor: pointer;
+ }
+
+
+ .quiz-image, .quiz-billede2, .quiz-billede3 {
+    display: none;
+}
+.quiz-image.active, .quiz-billede2.active, .quiz-billede3.active {
+    display: block;
+}
+
+ .quiz-header { 
+    font-size: 24px; 
+    margin-bottom: 40px; 
+}
