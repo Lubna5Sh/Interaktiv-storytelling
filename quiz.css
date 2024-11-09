@@ -40,14 +40,14 @@
 .quiz-buttons button {
     margin: 0 10px;
 }
-/*
+
 .quiz-buttons button { 
     font-size: 20px; margin: 10px; 
     margin: 10px;
     padding: 10px 20px; 
     cursor: pointer;
  }
-*/
+
 
  .quiz-image, .quiz-billede2, .quiz-billede3 {
     display: none;
@@ -60,8 +60,19 @@
     font-size: 24px; 
     margin-bottom: 40px; 
 }
-.quiz-billede3 {
-    width: 50%; /* Juster denne værdi for at ændre størrelsen */
+.retry-button {
+    display: none;
+    margin-top: 20px;
+}
+
+.feedback-section {
+    display: none;
+    margin-top: 50px;
+    text-align: center;
+}
+.feedback-section img {
+    width: 50%;
     height: auto;
-    max-width: 20%;
+    float: right;
+    margin-left: 20px;
 }
