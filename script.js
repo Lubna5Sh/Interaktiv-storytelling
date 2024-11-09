@@ -4,6 +4,7 @@ const incorrectButton = document.getElementById('incorrectButton');
 const retryButton = document.getElementById('retryButton');
 const result = document.getElementById('result');
 const feedbackSection = document.getElementById('feedbackSection');
+const nextPageIcon = document.getElementById('nextPageIcon');
 let currentImageIndex = 0;
 let score = 0;
 
@@ -22,7 +23,7 @@ function showFinalScore() {
     correctButton.disabled = true;
     incorrectButton.disabled = true;
     retryButton.style.display = 'block';
-    feedbackSection.style.display = 'block';
+    feedbackSection.style.display = 'flex';
     feedbackSection.scrollIntoView({ behavior: 'smooth' });
     setTimeout(() => {
         feedbackSection.classList.add('show');
@@ -63,3 +64,8 @@ incorrectButton.addEventListener('click', () => {
 });
 
 retryButton.addEventListener('click', resetQuiz);
+
+nextPageIcon.addEventListener('click', () => {
+    // Scroll til næste side eller sektion
+    document.getElementById('nextSection').scrollIntoView({ behavior: 'smooth' });
+});

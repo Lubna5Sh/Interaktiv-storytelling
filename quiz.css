@@ -68,19 +68,52 @@
 .feedback-section {
     display: none;
     margin-top: 50px;
-    text-align: center;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #FFAD98; /* Tilføj baggrundsfarve */
+    padding: 20px; /* Tilføj lidt polstring for at give plads omkring indholdet */
+    border-radius: 10px; /* Tilføj afrundede hjørner, hvis ønsket */
+}
+.feedback-section h2 {
+    font-size: 4em; /* Juster størrelsen efter behov */
+    font-weight: bold;
+    flex: 1;
 }
 .feedback-section img {
     width: 50%;
     height: auto;
-    float: right;
     margin-left: 20px;
     opacity: 0;
     transform: translateX(100%);
     transition: transform 1s ease, opacity 1s ease;
+    flex: 1;
 }
-
 .feedback-section.show img {
     opacity: 1;
     transform: translateX(0);
 }
+
+@import url('https://fonts.googleapis.com/css2?family=Kalnia:wght@700&display=swap');
+
+        body {
+            font-family: 'Kalnia', sans-serif;
+        }
+
+        #nextPageIcon {
+            position: absolute;
+            bottom: 10px;
+            left: 10px;
+            width: 50px; /* Juster størrelsen efter behov */
+            height: auto;
+            opacity: 0;
+            transform: translateY(20px);
+            transition: transform 0.5s ease, opacity 0.5s ease;
+        }
+        .feedback-section.show #nextPageIcon {
+            display: block;
+            opacity: 1;
+            transform: translateY(0);
+        }
+        
