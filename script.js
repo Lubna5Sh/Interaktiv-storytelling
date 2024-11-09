@@ -24,6 +24,9 @@ function showFinalScore() {
     retryButton.style.display = 'block';
     feedbackSection.style.display = 'block';
     feedbackSection.scrollIntoView({ behavior: 'smooth' });
+    setTimeout(() => {
+        feedbackSection.classList.add('show');
+    }, 500); // Forsinkelse for at sikre, at sektionen er synlig før animationen starter
 }
 
 function resetQuiz() {
@@ -34,6 +37,7 @@ function resetQuiz() {
     incorrectButton.disabled = false;
     retryButton.style.display = 'none';
     feedbackSection.style.display = 'none';
+    feedbackSection.classList.remove('show');
     images.forEach(image => image.classList.remove('active'));
     images[0].classList.add('active'); // Vis det første billede igen
 }

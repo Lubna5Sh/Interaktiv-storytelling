@@ -75,4 +75,12 @@
     height: auto;
     float: right;
     margin-left: 20px;
+    opacity: 0;
+    transform: translateX(100%);
+    transition: transform 1s ease, opacity 1s ease;
+}
+
+.feedback-section.show img {
+    opacity: 1;
+    transform: translateX(0);
 }
