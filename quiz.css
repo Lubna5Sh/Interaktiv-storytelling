@@ -75,6 +75,7 @@
     background-color: #FFAD98; /* Tilføj baggrundsfarve */
     padding: 20px; /* Tilføj lidt polstring for at give plads omkring indholdet */
     border-radius: 10px; /* Tilføj afrundede hjørner, hvis ønsket */
+    position: relative;
 }
 .feedback-section h2 {
     font-size: 4em; /* Juster størrelsen efter behov */
@@ -100,20 +101,18 @@
         body {
             font-family: 'Kalnia', sans-serif;
         }
-
-        #nextPageIcon {
-            position: absolute;
+        #scrollButton {
+            position: fixed;
             bottom: 10px;
             left: 10px;
-            width: 50px; /* Juster størrelsen efter behov */
-            height: auto;
-            opacity: 0;
-            transform: translateY(20px);
-            transition: transform 0.5s ease, opacity 0.5s ease;
-        }
-        .feedback-section.show #nextPageIcon {
-            display: block;
-            opacity: 1;
-            transform: translateY(0);
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
         }
         
+        #scrollButton:hover {
+            background-color: #0056b3;
+        }

@@ -65,7 +65,6 @@ incorrectButton.addEventListener('click', () => {
 
 retryButton.addEventListener('click', resetQuiz);
 
-nextPageIcon.addEventListener('click', () => {
-    // Scroll til næste side eller sektion
+document.getElementById('next page icon').addEventListener('click', function() {
     document.getElementById('nextSection').scrollIntoView({ behavior: 'smooth' });
 });
