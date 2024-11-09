@@ -1,4 +1,4 @@
-const images = document.querySelectorAll('.quiz-container img');
+   const images = document.querySelectorAll('.quiz-container img');
         const correctButton = document.getElementById('correctButton');
         const incorrectButton = document.getElementById('incorrectButton');
         const result = document.getElementById('result');

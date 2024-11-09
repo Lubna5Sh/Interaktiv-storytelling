@@ -26,14 +26,28 @@
 
 } 
 
-
+.quiz-buttons-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100px; /* Juster højden efter behov */
+}
+.quiz-buttons {
+    display: flex;
+    justify-content: center;
+}
+.quiz-buttons button {
+    margin: 0 10px;
+}
+/*
 .quiz-buttons button { 
     font-size: 20px; margin: 10px; 
     margin: 10px;
     padding: 10px 20px; 
     cursor: pointer;
  }
-
+*/
 
  .quiz-image, .quiz-billede2, .quiz-billede3 {
     display: none;
@@ -45,4 +59,9 @@
  .quiz-header { 
     font-size: 24px; 
     margin-bottom: 40px; 
+}
+.quiz-billede3 {
+    width: 50%; /* Juster denne værdi for at ændre størrelsen */
+    height: auto;
+    max-width: 20%;
 }
