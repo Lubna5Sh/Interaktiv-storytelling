@@ -27,7 +27,7 @@ function showFinalScore() {
     feedbackSection.scrollIntoView({ behavior: 'smooth' });
     setTimeout(() => {
         feedbackSection.classList.add('show');
-    }, 500); // Forsinkelse for at sikre, at sektionen er synlig før animationen starter
+    }, 500);
 }
 
 function resetQuiz() {
@@ -40,11 +40,11 @@ function resetQuiz() {
     feedbackSection.style.display = 'none';
     feedbackSection.classList.remove('show');
     images.forEach(image => image.classList.remove('active'));
-    images[0].classList.add('active'); // Vis det første billede igen
+    images[0].classList.add('active');
 }
 
 correctButton.addEventListener('click', () => {
-    if (currentImageIndex === 0 || currentImageIndex === 2) { // Billede 1 og 3
+    if (currentImageIndex === 0 || currentImageIndex === 2) {
         result.textContent = 'Korrekt!';
         score++;
     } else {
@@ -54,7 +54,7 @@ correctButton.addEventListener('click', () => {
 });
 
 incorrectButton.addEventListener('click', () => {
-    if (currentImageIndex === 1) { // Billede 2
+    if (currentImageIndex === 1) {
         result.textContent = 'Korrekt!';
         score++;
     } else {
@@ -65,6 +65,10 @@ incorrectButton.addEventListener('click', () => {
 
 retryButton.addEventListener('click', resetQuiz);
 
-document.getElementById('next page icon').addEventListener('click', function() {
+document.getElementById('nextPageButton').addEventListener('click', function() {
+    // Vis næste sektion
+    document.getElementById('nextSection').classList.remove('hidden');
+
+    // Scroll til næste sektion
     document.getElementById('nextSection').scrollIntoView({ behavior: 'smooth' });
 });
