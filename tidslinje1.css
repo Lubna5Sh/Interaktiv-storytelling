@@ -1,0 +1,36 @@
+body{
+    max-width: 1440px; /* Sætter den maksimale bredde til 1440px */
+    max-height: 1024px;
+}
+
+main{
+    background: linear-gradient(180deg, #FFAD98 69.73%, #ECD1CA 100%);
+}
+
+.periode-egy{
+    display: flex;
+    align-items: center;
+}
+
+img {
+    width: 792px;
+    height: 1024px;
+    flex-shrink: 0;
+}
+
+p{
+    color: #000;
+    font-family: Montserrat;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    width: 559px;
+}
+
+.dato-egy{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 30px;
+    margin-right: 30px;
+}
