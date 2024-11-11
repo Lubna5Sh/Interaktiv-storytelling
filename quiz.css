@@ -2,11 +2,11 @@
     text-align: center; 
     margin-top: 50px; 
     background-color: #A7DDFC; /* Tilføj baggrundsfarven */
-    grid-template-rows: auto 2fr; /* Definer rækkerne */
+    grid-template-rows: 2;
     gap: 20px; /* Tilføj afstand mellem rækkerne */
     padding: 20px; /* Tilføj padding for at skabe lidt luft omkring indholdet */
-    
 } 
+
 .quiz-content { 
     display: flex; 
     align-items: center; 
@@ -130,6 +130,9 @@
         body {
             font-family: 'Kalnia', sans-serif;
             background-color: #A7DDFC; /* Tilføjer lyserød baggrund */
+            max-width:100%;
+            overflow-x:hidden;
+            
         }
         #nextSection {
             text-align: center;
@@ -142,7 +145,7 @@
         
         figure img {
             width: 150px; /* Juster størrelsen efter behov */
-            height: auto;
+            height: 300px;
             border-radius: 10px; /* Tilføjer runde hjørner, hvis ønsket */
             cursor: pointer; /
         }
