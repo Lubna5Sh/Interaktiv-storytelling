@@ -13,6 +13,25 @@
     justify-content: center; 
 }
 
+h1, h2{
+    color: #000;
+    /*text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);*/
+    font-family: Kalnia;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+figcaption{
+    color: #000;
+    /*text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);*/
+    font-family: Montserrat;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
 
 .quiz-image { 
     max-width: 25%; 
@@ -34,10 +53,14 @@
     flex-direction: column;
     height: 100px; /* Juster højden efter behov */
 }
+
 .quiz-buttons {
     display: flex;
     justify-content: center;
+    position: relative;
+    bottom: 300px;
 }
+
 .quiz-buttons button {
     margin: 0 10px;
 }
@@ -47,18 +70,17 @@
     margin: 10px;
     padding: 10px 20px; 
     cursor: pointer;
- }
+}
 
-
- .quiz-image, .quiz-billede2, .quiz-billede3 {
+.quiz-image, .quiz-billede2, .quiz-billede3 {
     display: none;
 }
 .quiz-image.active, .quiz-billede2.active, .quiz-billede3.active {
     display: block;
 }
 
- .quiz-header { 
-    font-size: 24px; 
+.quiz-header { 
+    font-size: 40px; 
     margin-bottom: 40px; 
 }
 .retry-button {
@@ -73,7 +95,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #FFAD98; /* Tilføj baggrundsfarve */
+    background: linear-gradient(180deg, #FFAD98 69.73%, #ECD1CA 100%); /* Tilføj baggrundsfarve */
     padding: 20px; /* Tilføj lidt polstring for at give plads omkring indholdet */
     border-radius: 10px; /* Tilføj afrundede hjørner, hvis ønsket */
     position: relative;
@@ -108,6 +130,7 @@
 .next-button img {
     width: 0px;
 }
+
 .next-page-button {
     position: absolute;
     left: 90px; /* Juster til ønsket afstand fra venstre */
@@ -117,6 +140,13 @@
     cursor: pointer;
     width: 100px; /* Juster størrelsen her */
     height: -30px;
+    rotate: 90deg;
+    border-radius: 50%; /* Gør ikonet rundt */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    text-decoration: none; /* Fjern underline */
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 10px;
 }
 
 .next-page-button img {
@@ -127,32 +157,35 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Kalnia:wght@700&display=swap');
 
-        body {
-            font-family: 'Kalnia', sans-serif;
-            background-color: #A7DDFC; /* Tilføjer lyserød baggrund */
-            max-width:100%;
-            overflow-x:hidden;
-            
-        }
-        #nextSection {
-            text-align: center;
-        }
-        
-        figure {
-            display: inline-block;
-            margin: 20px;
-        }
-        
-        figure img {
-            width: 150px; /* Juster størrelsen efter behov */
-            height: 300px;
-            border-radius: 10px; /* Tilføjer runde hjørner, hvis ønsket */
-            cursor: pointer; /
-        }
-        
-        figcaption {
-            margin-top: 10px;
-            font-size: 1em;
-            color: #333;
-            text-align: center;
-        }
+body {
+    font-family: 'Kalnia', sans-serif;
+    background: linear-gradient(180deg, #A7DDFC 71.97%, #DAF1FF 100%);
+    max-width:100%;
+    overflow-x:hidden;
+    
+}
+#nextSection {
+    text-align: center;
+}
+
+figure {
+    display: inline-block;
+    margin: 20px;
+}
+
+figure img {
+    width: 200px; /* Juster størrelsen efter behov */
+    height: 245px;
+    /*border-radius: 10px; /* Tilføjer runde hjørner, hvis ønsket */
+    cursor: pointer;
+}
+
+figcaption {
+    margin-top: 10px;
+    font-size: 1em;
+    color: #333;
+    text-align: center;
+    background: #FFF;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.119);
+    padding:10px;
+}
