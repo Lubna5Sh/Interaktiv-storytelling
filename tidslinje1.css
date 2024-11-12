@@ -121,3 +121,30 @@ h2{
     scroll-snap-align: start; /* Snap til starten af hvert element */
     flex: 0 0 100vw; /* Sørg for at hvert element tager hele viewport bredden */
 }
+
+.pil-knap {
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    width: 50px; /* Størrelsen på pilen */
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /*background-color: #ffffff; /* Baggrundsfarve */
+    border-radius: 50%; /* Gør ikonet rundt */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    text-decoration: none; /* Fjern underline */
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 10px;
+}
+
+.pil-knap img {
+    width: 50px;
+    height: 50px;
+}
+
+.pil-knap:hover {
+    background-color: #ffffffa7; /* Skift farve ved hover */
+}
