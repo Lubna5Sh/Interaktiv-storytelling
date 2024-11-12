@@ -7,6 +7,6 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     nextPageIcon.addEventListener('click', function() {
-        window.location.href = 'nextpage.html'; // Erstat 'nextpage.html' med din næste side URL
+        window.location.href = 'tidslinje1.html'; // Erstat 'nextpage.html' med din næste side URL
     });
 });
