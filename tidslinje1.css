@@ -3,16 +3,17 @@ body{
     max-height: 1024px;
 }
 
-main{
+/*main{
+    background: linear-gradient(180deg, #FFAD98 69.73%, #ECD1CA 100%);
+}*/
+
+.periode-egy {
+    display: flex;
+    align-items: center;
     background: linear-gradient(180deg, #FFAD98 69.73%, #ECD1CA 100%);
 }
 
-.periode-egy{
-    display: flex;
-    align-items: center;
-}
-
-img {
+.faroon {
     width: 792px;
     height: 1024px;
     flex-shrink: 0;
@@ -31,6 +32,92 @@ p{
 .dato-egy{
     display: flex;
     justify-content: space-between;
-    margin-left: 30px;
-    margin-right: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+    background: linear-gradient(180deg, #ECD1CA 69.73%, #ECD1CA 100%);
+}
+
+h1{
+    color: #000;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: Kalnia;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+h2{
+    color: #000;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: Montserrat;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.linje-cirkel{
+    padding-bottom: 50px;
+    /*width:1440px;*/
+}
+
+.periode-grek {
+    display: flex;
+    align-items: center;
+    background: linear-gradient(180deg, #A7DDFC 71.97%, #DAF1FF 100%);
+}
+
+.statue {
+    width: 792px;
+    height: 1024px;
+    flex-shrink: 0;
+}
+
+.dato-grek{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 30px;
+    padding-right: 30px;
+    background: linear-gradient(180deg, #DAF1FF 71.97%, #DAF1FF 100%);
+}
+
+.periode-modr{
+    display: flex;
+    align-items: center;
+    background: linear-gradient(180deg, #FFAD98 69.73%, #ECD1CA 100%);
+}
+
+.monroe{
+    width: 792px;
+    height: 1024px;
+    flex-shrink: 0;
+}
+
+.dato-modr{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 30px;
+    padding-right: 30px;
+    background: linear-gradient(180deg, #ECD1CA 69.73%, #ECD1CA 100%);
+}
+
+.tidslinje-wrapper{
+    display: flex;
+    overflow-x: scroll; /* Vandret scrolling */
+    scroll-snap-type: x mandatory; /* Snap-effekt på hvert item */
+    width: 100vw;
+}
+
+#linje-cirkel-pink{
+    background: linear-gradient(180deg, #ECD1CA 69.73%, #ECD1CA 100%);
+}
+
+#linje-cirkel-blue{
+    background: linear-gradient(180deg, #DAF1FF 71.97%, #DAF1FF 100%);
+}
+
+.tidslinje-item {
+    scroll-snap-align: start; /* Snap til starten af hvert element */
+    flex: 0 0 100vw; /* Sørg for at hvert element tager hele viewport bredden */
 }
