@@ -59,7 +59,7 @@ h2{
 
 .linje-cirkel{
     padding-bottom: 50px;
-    /*width:1440px;*/
+    width:100%;
 }
 
 .periode-grek {
@@ -106,7 +106,7 @@ h2{
     display: flex;
     overflow-x: scroll; /* Vandret scrolling */
     scroll-snap-type: x mandatory; /* Snap-effekt på hvert item */
-    width: 100vw;
+    width: 100%;
 }
 
 #linje-cirkel-pink{
